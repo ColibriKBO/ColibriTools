@@ -40,7 +40,7 @@ def singleFxn(fxn, *args):
 ##############################
 
 def twoFxn(fxn1, fxn2, *args):
-        """
+	"""
         A function to compare the execution time of two functions using the same parameters
 
                 Parameters:
@@ -58,18 +58,18 @@ def twoFxn(fxn1, fxn2, *args):
 
 	## Timing the first function
 
-        t = time()
-        fxn1(*args)
-        t1 = time() - t
+	t = time()
+	fxn1(*args)
+	t1 = time() - t
 
 	## Timing the second function
 
-        t = time()
-        fxn2(*args)
-        t2 = time() - t   
+	t = time()
+	fxn2(*args)
+	t2 = time() - t
 
 
-        print("Time to run the first function: {}".format(t1))
-        print("Time to run the second function: {}".format(t2))
-	print("Difference in execution time:    {}".format(t2-t1)
-        return t1, t2, t2-t1
+	print("Time to run the first function: {}".format(t1))
+	print("Time to run the second function: {}".format(t2))
+	print("Difference in execution time:    {}".format(t2-t1))
+	return t1, t2, t2-t1
